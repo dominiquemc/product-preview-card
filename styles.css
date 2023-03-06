@@ -4,6 +4,8 @@
     --clr-dk-blue: hsl(212, 21%, 14%);
     --clr-gray-blue: hsl(228, 12%, 48%);
     --clr-white: hsl(0, 0%, 100%);
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-secondary: 'Fraunces', serif;
 }
 
 /* CSS RESET */
@@ -11,6 +13,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 html, body {
@@ -21,6 +24,11 @@ body {
     background-color: var(--clr-cream);
     line-height: 1.5;
     -webkit-font-smoothing: antialised;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 img, picture {
@@ -34,11 +42,19 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* STYLES */
 
-button {
-    font: inherit;
+.container {
+    background-color: var(--clr-white);
+    border-radius: 6px;
+    max-width: 80%;
+    overflow: hidden;
 }
 
-p {
+.perfume-text {
+    color: var(--clr-gray-blue);
+    font-family: var(--ff-primary);
+    font-size: 0.6rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
 
 }
 
@@ -50,6 +66,9 @@ h1 {
     font-size: 0.875rem;
 }
 
+button {
+    font: inherit;
+}
 
 
 
