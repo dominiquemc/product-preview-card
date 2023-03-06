@@ -45,31 +45,43 @@ p, h1, h2, h3, h4, h5, h6 {
 .container {
     background-color: var(--clr-white);
     border-radius: 6px;
-    max-width: 80%;
+    max-width: 90%;
     overflow: hidden;
+    
 }
 
 .perfume-text {
     color: var(--clr-gray-blue);
     font-family: var(--ff-primary);
-    font-size: 0.6rem;
+    font-size: 0.75rem;
     letter-spacing: 0.3rem;
     text-transform: uppercase;
 
 }
 
 h1 {
-
+    font-family: var(--ff-secondary);
+    line-height: 1;
 }
 
 .about {
-    font-size: 0.875rem;
+    color: var(--clr-gray-blue);
+    font-family: var(--ff-primary);
+    font-size: 0.89rem;
 }
 
 button {
     font: inherit;
 }
 
+.container-detail {
+  padding: 5px;
+  margin: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+   
+}
 
 
 
