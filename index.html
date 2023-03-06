@@ -13,7 +13,12 @@
 <body>
 
   <div class="container">
-  <img src="images/image-product-mobile.jpg">
+
+  <picture>
+      <source media="(max-width: 600px)" srcset="images/image-product-mobile.jpg">
+      <source media="(min-width: 600px)" srcset="images/image-product-desktop.jpg">
+       <img src="images/image-product-mobile.jpg" alt="Bottle of Chanel Perfume">
+</picture>
 
   <div class="container-detail">
   <p class="perfume-text">Perfume</p>
