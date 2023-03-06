@@ -40,7 +40,7 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 
-/* STYLES */
+/* STYLES: MOBILE-FIRST */
 
 .container {
     background-color: var(--clr-white);
@@ -80,13 +80,23 @@ button {
   display: flex;
   flex-direction: column;
   gap: 15px;
-   
 }
 
+.price {
+}
 
+.sale {
+   color: var(--clr-dk-cyan);
+   font-family: var(--ff-secondary);
+   font-size: 2rem;
+}
 
-
-
+.original {
+    color: var(--clr-gray-blue);
+    font-family: var(--ff-primary);
+    font-size: 0.8rem;
+    text-decoration: line-through;
+}
 
 
 
