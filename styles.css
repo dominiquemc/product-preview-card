@@ -68,10 +68,11 @@ h1 {
     color: var(--clr-gray-blue);
     font-family: var(--ff-primary);
     font-size: 0.8rem;
+    line-height: 1.7;
 }
 
 .container-detail {
-  gap: 15px;
+  gap: 10px;
   padding: 10px;
   margin: 15px;
   display: flex;
@@ -113,6 +114,24 @@ button::before {
     content: url(images/icon-cart.svg);
     padding: 5px;
 }
+
+/* DESKTOP STYLES */
+
+@media (min-width: 600px) {
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+}
+
+
+
+
+
+
+
+
 
 /*
 
