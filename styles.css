@@ -10,7 +10,7 @@
 
 /* CSS RESET */
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -67,17 +67,13 @@ h1 {
 .about {
     color: var(--clr-gray-blue);
     font-family: var(--ff-primary);
-    font-size: 0.89rem;
-}
-
-button {
-    font: inherit;
+    font-size: 0.8rem;
 }
 
 .container-detail {
   gap: 15px;
-  padding: 5px;
-  margin: 14px;
+  padding: 10px;
+  margin: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -102,7 +98,21 @@ button {
 }
 
 
+button {
+    background-color: var(--clr-dk-cyan);
+    border: none;
+    border-radius: 5px;
+    color: var(--clr-white);
+    font-family: var(--ff-primary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 15px;
+}
 
+button::before {
+    content: url(images/icon-cart.svg);
+    padding: 5px;
+}
 
 /*
 
