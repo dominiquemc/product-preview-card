@@ -1,0 +1,78 @@
+:root {
+    --clr-dk-cyan: hsl(158, 36%, 37%);
+    --clr-cream: hsl(30, 38%, 92%);
+    --clr-dk-blue: hsl(212, 21%, 14%);
+    --clr-gray-blue: hsl(228, 12%, 48%);
+    --clr-white: hsl(0, 0%, 100%);
+}
+
+/* CSS RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--clr-cream);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialised;
+}
+
+img, picture {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* STYLES */
+
+button {
+    font: inherit;
+}
+
+p {
+
+}
+
+h1 {
+
+}
+
+.about {
+    font-size: 0.875rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700
+*/
