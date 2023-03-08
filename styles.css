@@ -33,7 +33,7 @@ body {
 
 img, picture {
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -121,7 +121,16 @@ button::before {
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
+    max-width: 60%;
+}
+
+.container-detail {
+    border: 1px solid red;
+    gap: 30px;
+}
+img {
+    height: 100%;
+    object-fit: cover;
 }
 }
 
