@@ -26,7 +26,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 img, picture {
@@ -86,13 +85,13 @@ h1, .sale {
 
 .original {
     text-decoration: line-through;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-left: 15px;
 }
 
 .sale {
     color: var(--clr-dk-cyan);
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 button {
@@ -116,13 +115,11 @@ button::before {
 /* DESKTOP */
 
 @media (min-width: 600px) {
-    
-    html, body {
+    html, body, img {
         height: 100%;
     }
 
     img {
-        height: 100%;
         object-fit: cover;
     }
     .container {
