@@ -18,17 +18,15 @@
 
 html, body {
     height: 100%;
+    border: 3px solid purple;
 }
 
 body {
     background-color: var(--clr-cream);
-    line-height: 1.5;
     -webkit-font-smoothing: antialised;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-
+    align-items: center;
 }
 
 img, picture {
@@ -43,118 +41,69 @@ p, h1, h2, h3, h4, h5, h6 {
 /* STYLES: MOBILE-FIRST */
 
 .container {
-    background-color: var(--clr-white);
-    border-radius: 6px;
-    max-width: 90%;
+    border-radius: 10px;
+    max-width: 85%;
     overflow: hidden;
-    
+    background-color: var(--clr-white);
+}
+
+.cont-details {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    gap: 15px;
 }
 
 .perfume-text {
-    color: var(--clr-gray-blue);
-    font-family: var(--ff-primary);
-    font-size: 0.75rem;
-    letter-spacing: 0.3rem;
     text-transform: uppercase;
-
+    letter-spacing: 5px;
+    font-size: 0.7rem;
 }
 
 h1 {
-    font-family: var(--ff-secondary);
     line-height: 1;
+    font-size: 1.7rem;
 }
 
+h1, .sale {
+    font-family: var(--ff-secondary);
+}
 .about {
-    color: var(--clr-gray-blue);
-    font-family: var(--ff-primary);
     font-size: 0.8rem;
     line-height: 1.7;
 }
 
-.container-detail {
-  gap: 10px;
-  padding: 10px;
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-}
-
-.price-container {
-   display: flex;
-   align-items: center;
-   gap: 15px;
-}
-
-.sale {
-   color: var(--clr-dk-cyan);
-   font-family: var(--ff-secondary);
-   font-size: 2rem;
+.perfume-text, .about, .original {
+    font-family: var(--ff-primary);
+    color: var(--clr-gray-blue);
 }
 
 .original {
-    color: var(--clr-gray-blue);
-    font-family: var(--ff-primary);
-    font-size: 0.8rem;
     text-decoration: line-through;
+    font-size: 0.8rem;
 }
 
+.sale {
+    color: var(--clr-dk-cyan);
+    font-size: 1.8rem;
+}
 
-button {
-    background-color: var(--clr-dk-cyan);
+button{
     border: none;
-    border-radius: 5px;
+    background-color: var(--clr-dk-cyan);
     color: var(--clr-white);
-    font-family: var(--ff-primary);
-    font-size: 0.8rem;
+    padding: 10px;
+    border-radius: 5px;
     font-weight: 700;
-    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 button::before {
     content: url(images/icon-cart.svg);
-    padding: 5px;
+    margin-right: 10px;
+    
 }
-
-/* DESKTOP STYLES */
-
-@media (min-width: 600px) {
-.container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 60%;
-}
-
-.container-detail {
-    border: 1px solid red;
-    gap: 30px;
-}
-img {
-    height: 100%;
-    object-fit: cover;
-}
-}
-
-
-
-
-
-
-
-
-
-/*
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 14px
-
-### Font
-
-- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
-- Weights: 500, 700
-
-- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
-- Weights: 700
-*/
