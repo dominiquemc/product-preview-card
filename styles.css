@@ -69,8 +69,8 @@ h1, .sale {
     font-family: var(--ff-secondary);
 }
 .about {
-    font-size: 0.8rem;
-    line-height: 1.7;
+    font-size: 0.9rem;
+    line-height: 1.8;
 }
 
 .perfume-text, .about, .original {
