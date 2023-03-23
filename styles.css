@@ -18,7 +18,6 @@
 
 html, body {
     height: 100%;
-    border: 3px solid purple;
 }
 
 body {
@@ -27,6 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 img, picture {
@@ -79,9 +79,15 @@ h1, .sale {
     color: var(--clr-gray-blue);
 }
 
+.price-container {
+    display: flex;
+    align-items: center;
+}
+
 .original {
     text-decoration: line-through;
     font-size: 0.8rem;
+    margin-left: 15px;
 }
 
 .sale {
@@ -89,7 +95,7 @@ h1, .sale {
     font-size: 1.8rem;
 }
 
-button{
+button {
     border: none;
     background-color: var(--clr-dk-cyan);
     color: var(--clr-white);
@@ -104,6 +110,34 @@ button{
 
 button::before {
     content: url(images/icon-cart.svg);
-    margin-right: 10px;
+    margin-right: 10px;   
+}
+
+/* DESKTOP */
+
+@media (min-width: 600px) {
     
+    html, body {
+        height: 100%;
+    }
+
+    img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 650px;
+    }
+
+    .cont-details {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    h1 {
+        font-size: 2.4rem;
+    }
+
 }
